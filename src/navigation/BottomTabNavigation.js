@@ -15,85 +15,81 @@ const Tab = createBottomTabNavigator();
 
 const BottomTabNavigation = () => {
   return (
-    <SafeAreaView style={{backgroundColor: '#F2F2F2', flex: 1}}>
-        <NavigationContainer>
-            <Tab.Navigator screenOptions={{
-                    headerShown: false, 
-                    tabBarStyle: { backgroundColor: 'black', paddingTop: hp(1.5) }
-                }}>
-                <Tab.Screen name="Home" component={HomeScreen} options={{ 
-                        tabBarLabel: "",
-                        tabBarIcon: ({ focused }) => {
-                          const iconSource = focused
-                            ? require('../assets/logos/fill-homeIcon.png') 
-                            : require('../assets/logos/hollow-homeIcon.png'); 
-            
-                          return (
-                            <View style={focused ? styles.navigationStyle : null}>
-                              <Image source={iconSource} />
-                            </View>
-                          );
-                        },
-                    }}/>
-                <Tab.Screen name="SoldCustomer" component={SoldCustomerScreen} options={{ 
-                        tabBarLabel: "",
-                        tabBarIcon: ({ focused }) => {
-                          const iconSource = focused
-                            ? require('../assets/logos/fill-peopleIcon.png') 
-                            : require('../assets/logos/hollow-peopleIcon.png'); 
-            
-                            return (
-                              <View style={focused ? styles.navigationStyle : null}>
-                                <Image source={iconSource} />
-                              </View>
-                            );
-                        },
-                    }}/>
-                <Tab.Screen name="StitchCustomer" component={StitchCustomerScreen} options={{ 
-                        tabBarLabel: "",
-                        tabBarIcon: ({ focused }) => {
-                          const iconSource = focused
-                            ? require('../assets/logos/fill-sewingMachineIcon.png') 
-                            : require('../assets/logos/hollow-sewingMachineIcon.png'); 
-            
-                            return (
-                              <View style={focused ? styles.navigationStyle : null}>
-                                <Image source={iconSource} />
-                              </View>
-                            );
-                        },
-                    }}/>
-                <Tab.Screen name="GaajButton" component={GaajButtonScreen} options={{ 
-                        tabBarLabel: "",
-                        tabBarIcon: ({ focused }) => {
-                          const iconSource = focused
-                            ? require('../assets/logos/fill-button.png') 
-                            : require('../assets/logos/button.png'); 
-            
-                            return (
-                              <View style={focused ? styles.navigationStyle : null}>
-                                <Image source={iconSource} />
-                              </View>
-                            );
-                        },
-                    }}/>
-                <Tab.Screen name="Profile" component={ProfileScreen} options={{ 
-                        tabBarLabel: "",
-                        tabBarIcon: ({ focused }) => {
-                          const iconSource = focused
-                            ? require('../assets/logos/fill-userIcon.png') 
-                            : require('../assets/logos/hollow-userIcon.png'); 
-            
-                            return (
-                              <View style={focused ? styles.navigationStyle : null}>
-                                <Image source={iconSource} />
-                              </View>
-                            );
-                        },
-                    }}/>
-            </Tab.Navigator>
-        </NavigationContainer>
-    </SafeAreaView>
+      <Tab.Navigator screenOptions={{
+              headerShown: false, 
+              tabBarStyle: { backgroundColor: 'black', paddingTop: hp(1.5) }
+          }}>
+          <Tab.Screen name="Home" component={HomeScreen} options={{ 
+                  tabBarLabel: "",
+                  tabBarIcon: ({ focused }) => {
+                    const iconSource = focused
+                      ? require('../assets/logos/fill-homeIcon.png') 
+                      : require('../assets/logos/hollow-homeIcon.png'); 
+      
+                    return (
+                      <View style={focused ? styles.navigationStyle : null}>
+                        <Image source={iconSource} />
+                      </View>
+                    );
+                  },
+              }}/>
+          <Tab.Screen name="SoldCustomer" component={SoldCustomerScreen} options={{ 
+                  tabBarLabel: "",
+                  tabBarIcon: ({ focused }) => {
+                    const iconSource = focused
+                      ? require('../assets/logos/fill-peopleIcon.png') 
+                      : require('../assets/logos/hollow-peopleIcon.png'); 
+      
+                      return (
+                        <View style={focused ? styles.navigationStyle : null}>
+                          <Image source={iconSource} />
+                        </View>
+                      );
+                  },
+              }}/>
+          <Tab.Screen name="StitchCustomer" component={StitchCustomerScreen} options={{ 
+                  tabBarLabel: "",
+                  tabBarIcon: ({ focused }) => {
+                    const iconSource = focused
+                      ? require('../assets/logos/fill-sewingMachineIcon.png') 
+                      : require('../assets/logos/hollow-sewingMachineIcon.png'); 
+      
+                      return (
+                        <View style={focused ? styles.navigationStyle : null}>
+                          <Image source={iconSource} />
+                        </View>
+                      );
+                  },
+              }}/>
+          <Tab.Screen name="GaajButton" component={GaajButtonScreen} options={{ 
+                  tabBarLabel: "",
+                  tabBarIcon: ({ focused }) => {
+                    const iconSource = focused
+                      ? require('../assets/logos/fill-button.png') 
+                      : require('../assets/logos/button.png'); 
+      
+                      return (
+                        <View style={focused ? styles.navigationStyle : null}>
+                          <Image source={iconSource} />
+                        </View>
+                      );
+                  },
+              }}/>
+          <Tab.Screen name="Profile" component={ProfileScreen} options={{ 
+                  tabBarLabel: "",
+                  tabBarIcon: ({ focused }) => {
+                    const iconSource = focused
+                      ? require('../assets/logos/fill-userIcon.png') 
+                      : require('../assets/logos/hollow-userIcon.png'); 
+      
+                      return (
+                        <View style={focused ? styles.navigationStyle : null}>
+                          <Image source={iconSource} />
+                        </View>
+                      );
+                  },
+              }}/>
+      </Tab.Navigator>
   )
 }
 

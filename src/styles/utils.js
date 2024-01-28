@@ -17,6 +17,22 @@ let utils = StyleSheet.create({
         fontWeight: '700',
         fontSize: hp(2.5)
     },
+    headingText: {
+        color: 'black',
+        fontWeight: '500',
+        fontSize: hp(3),
+        textAlign: 'center',
+    },
+    labelText: {
+        color: 'black',
+        fontSize: hp(2.2),
+        fontWeight: '400',
+    },
+    buttonText: {
+        color: 'white',
+        fontSize: hp(2.2),
+        fontWeight: '400',
+    }
 })
 
 export {utils}

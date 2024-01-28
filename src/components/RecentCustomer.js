@@ -8,17 +8,17 @@ import { utils } from '../styles/utils'
 const RecentCustomer = () => {
   return (
     <View style={recentCustomer.container}>
-        <View style={recentCustomer.userDetail}>
+      <View style={recentCustomer.userDetail}>
         <Image style={recentCustomer.userDetailImage} source={require('../assets/placeholder.png')} />
         <View style={recentCustomer.userDetailContent}>
             <Text style={utils.mediumText}>Altamas</Text>
             <Text style={utils.smallGrayText}>926570XXXX</Text>
         </View>
-        </View>
-        <View>
+      </View>
+      <View>
         <ChevronRightIcon height={hp(2)} width={hp(2)} color={'black'} />
-        </View>
-  </View>
+      </View>
+    </View>
   )
 }
 

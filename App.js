@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, Text } from 'react-native'
-import BottomTabNavigation from './src/navigation/BottomTabNavigation'
+import MainStackNavigation from './src/navigation/MainStackNavigation'
 
 const App = () => {
   return (
-    <BottomTabNavigation />
+    <MainStackNavigation />
   )
 }
 
