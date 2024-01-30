@@ -159,6 +159,10 @@ let universal = StyleSheet.create({
         padding: hp(2),
         width: wp(50),
         borderRadius: 10,
+    },
+    center: {
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 })
 
@@ -182,6 +186,30 @@ let forms = StyleSheet.create({
         color: 'black',
         fontSize: hp(2)
     },
+    inputWithBtn: {
+        flexDirection: 'row'
+    },
+    textInput2: {
+        backgroundColor: 'white',
+        marginVertical: hp(1),
+        borderWidth: 1,
+        borderColor: '#d2d2d2',
+        borderRadius: 5,
+        elevation: 2,
+        paddingHorizontal: wp(3),
+        color: 'black',
+        fontSize: hp(2),
+        flex: 3
+    },
+    inputButton: {
+        flex: 1,
+        marginVertical: hp(1),
+        borderRadius: 5,
+        backgroundColor: 'black',
+        justifyContent: 'center',
+        marginLeft: hp(1),
+        alignItems: 'center'
+    }
 
 })
 
@@ -222,4 +250,59 @@ let seperator = StyleSheet.create({
     }
 })
 
-export {homepage, recentCustomer, universal, soldCustomer, stitchCustomer, forms, dropdown, seperator }
+let profile = StyleSheet.create({
+    titleContainer: {
+        width: wp(100),
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    titleText: {
+        color: 'black',
+        fontSize: hp(4),
+        fontWeight: '700',
+        paddingVertical: hp(2)
+    },
+    linkContainer: {
+        marginHorizontal: spacer,
+        width: respWidth,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        backgroundColor: 'white',
+        paddingVertical: wp(3),
+        paddingHorizontal: wp(4),
+        borderRadius: 15,
+        elevation: 0.9,
+        marginBottom: hp(2)
+    },
+    linkText: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    svgStyle: {
+        marginRight: wp(4)
+    },
+
+})
+let customer = StyleSheet.create({
+    container: {
+        backgroundColor: 'white',
+        marginHorizontal: wp(7),
+        width: wp(86),
+        borderRadius: 12,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingVertical: hp(2),
+        paddingHorizontal: wp(5),
+        alignItems: 'center',
+        elevation: 1,
+        marginBottom: hp(1),
+        position: 'relative',
+        zIndex: 1,
+      }
+
+})
+
+
+
+export {homepage, recentCustomer, universal, soldCustomer, stitchCustomer, forms, dropdown, seperator, profile, customer }

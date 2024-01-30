@@ -5,7 +5,7 @@ import { universal } from '../styles/style'
 import { ArrowLeftIcon } from 'react-native-heroicons/outline'
 import { utils } from '../styles/utils';
 
-const SimpleHeader = ({navigation, title}) => {
+const SimpleHeader = ({navigation, title }) => {
   return (
     <View style={universal.insideHeader}>
         <TouchableOpacity style={universal.flex1} onPress={() => navigation.goBack()}>

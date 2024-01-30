@@ -1,0 +1,25 @@
+Bottom tab Navigation 
+
+1). HomeScreen -- Home Screen Component -- init
+2). SoldCustomerScreen -- Sold Customer Component
+3). StitchCustomerScreen -- Stitch Customer Component
+4). GaajButtonScreen -- Gaaj Button Component
+5). ProfileStackNavigation -- Stack navigation for Profile Page
+
+Main Stack Navigation (Main App Level Navigation)
+
+1). BottomTabNavigation -- Whole Bottom Navigation -- init
+2). AddSoldBillScreen -- Add Sold Bill Screen -- src - HomeScreen
+3). MeasurementScreen -- Mesurement Screen -- src - HomeScreen
+4). ClothingScreen  -- Clothing Screen -- src - comes after MeasurementScreen and MoreClothScreen
+5). MoreClothScreen -- More Cloth Screen -- src - comes ater ClothingScreen
+6). StitchBillScreen -- Stitch Bill Screen -- src - comes after MoreClothScreen
+
+Profle Stack Navigation
+
+1). ProfileScreen -- Main Profile Screen -- init
+2). CMTopTabNavigation -- Top Tab Navigation For Clothing Management
+
+CMTopTabNavigation
+
+1). CMClothingScreen -- Clothing Mgmt. Clothing Screen -- init

@@ -28,6 +28,11 @@ let utils = StyleSheet.create({
         fontSize: hp(2.2),
         fontWeight: '400',
     },
+    labelWhiteText: {
+        color: 'white',
+        fontSize: hp(2.2),
+        fontWeight: '400',
+    },
     buttonText: {
         color: 'white',
         fontSize: hp(2.2),

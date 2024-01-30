@@ -66,6 +66,7 @@ const MeasurementScreen = ({navigation}) => {
                 maxHeight={300}
                 labelField="label"
                 valueField="value"
+                autoScroll={false}
                 placeholder={'Select item'}
                 value={value}
                 onFocus={() => setIsFocus(true)}

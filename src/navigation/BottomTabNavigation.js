@@ -1,13 +1,12 @@
 import React from 'react';
 import { SafeAreaView, Text, View, Image, StyleSheet } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/HomeScreen';
 import SoldCustomerScreen from '../screens/SoldCustomerScreen';
 import StitchCustomerScreen from '../screens/StitchCustomerScreen';
 import GaajButtonScreen from '../screens/GaajButtonScreen';
-import ProfileScreen from '../screens/ProfileScreen';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import ProfileStackNavigation from './ProfileStackNavigation';
 
 
 
@@ -75,7 +74,7 @@ const BottomTabNavigation = () => {
                       );
                   },
               }}/>
-          <Tab.Screen name="Profile" component={ProfileScreen} options={{ 
+          <Tab.Screen name="Profile" component={ProfileStackNavigation} options={{ 
                   tabBarLabel: "",
                   tabBarIcon: ({ focused }) => {
                     const iconSource = focused
