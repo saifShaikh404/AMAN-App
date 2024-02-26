@@ -1,59 +1,58 @@
 import React from 'react'
-import {  Text, View, TextInput, TouchableOpacity, ScrollView } from 'react-native'
+import { Text, View, TouchableOpacity, TextInput } from 'react-native'
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
-import { stitchCustomer, universal } from '../styles/style'
-import { utils } from '../styles/utils'
-import WelcomeSVG from "../assets/main.svg"
-import {MagnifyingGlassIcon} from "react-native-heroicons/outline"
-import RecentCustomer from '../components/RecentCustomer';
-// import AnimationFade from '../components/animationFade';
+import { universal, forms } from '../styles/style'
+import { utils } from '../styles/utils';
+import SimpleHeader from '../components/SimpleHeader';
+import { PlusIcon } from 'react-native-heroicons/outline'
 
-const StitchCustomerScreen = () => {
+const StitchBillScreen = ({navigation}) => {
   return (
     <View style={universal.main}>
+        {/* Back Button And header  */}
+      <SimpleHeader navigation={navigation} title="Stitch Bill" />
 
-    {/* logo  */}
-      <View style={universal.imageContainer}>
-        <WelcomeSVG width={hp(8)} height={hp(6)} />
+      {/* Form  */}
+      <View style={[forms.container, {paddingVertical: hp(1.5)}]}>
+        {/* Text Input  */}
+        <View style={forms.inputContainer}>
+          <Text style={utils.labelText}>Name</Text>
+          <TextInput style={forms.textInput} placeholder='Enter Name' placeholderTextColor={'gray'}></TextInput>
+        </View>
+
+        {/* Text Input  */}
+        <View style={forms.inputContainer}>
+          <Text style={utils.labelText}>Mobile Number</Text>
+          <TextInput style={forms.textInput} placeholder='Enter Mobile' placeholderTextColor={'gray'}></TextInput>
+        </View>
+
+        {/* Text Input  */}
+        <View style={forms.inputContainer}>
+          <Text style={utils.labelText}>Shirt Qty.</Text>
+          <TextInput style={forms.textInput} placeholder='Enter Shirt Qty' placeholderTextColor={'gray'}></TextInput>
+        </View>
+
+        {/* Text Input  */}
+        <View style={forms.inputContainer}>
+          <Text style={utils.labelText}>Pant Qty</Text>
+          <TextInput style={forms.textInput} placeholder='Enter Pant Qty' placeholderTextColor={'gray'}></TextInput>
+        </View>
+
+        {/* Text Input  */}
+        <View style={forms.inputContainer}>
+          <Text style={utils.labelText}>Total Amount</Text>
+          <TextInput style={forms.textInput} placeholder='Enter Amount' placeholderTextColor={'gray'}></TextInput>
+        </View>
+
+
       </View>
 
-    {/* Search Bar  */}
-      <View style={universal.searchContainer}>
-        <TextInput style={universal.searchBar} placeholder='Enter mobile number' placeholderTextColor={'gray'}></TextInput>
-        <TouchableOpacity style={universal.searchBtn}>
-            <MagnifyingGlassIcon color={'black'} height={hp(4)} width={hp(4)} />
-        </TouchableOpacity>
+      <View style={universal.innerPageBtn}>
+        <PlusIcon height={hp(4)} width={hp(4)} strokeWidth={hp(0.4)} color={'white'} />
       </View>
 
-    {/* Recent Customer  */}
-    <View style={stitchCustomer.recentContainer}>
-        <Text style={utils.smallText}>Recent Customers</Text>
-        <ScrollView style={{width: wp(86), height: hp(69), marginTop: hp(1)}}>
-          {/* Recent Customer Details  */}
-          <RecentCustomer />
-          {/* Recent Customer Details  */}
-          <RecentCustomer />
-          {/* Recent Customer Details  */}
-          <RecentCustomer />
-          {/* Recent Customer Details  */}
-          <RecentCustomer />
-          {/* Recent Customer Details  */}
-          <RecentCustomer />
-          {/* Recent Customer Details  */}
-          <RecentCustomer />
-          {/* Recent Customer Details  */}
-          <RecentCustomer />
-          {/* Recent Customer Details  */}
-          <RecentCustomer />
-          {/* Recent Customer Details  */}
-          <RecentCustomer />
-          {/* Recent Customer Details  */}
-          <RecentCustomer />
-        </ScrollView>
     </View>
-
-  </View>
   )
 }
 
-export default StitchCustomerScreen
+export default StitchBillScreen

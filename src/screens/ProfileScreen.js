@@ -23,7 +23,7 @@ const ProfileScreen = ({ navigation }) => {
       {/* Links  */}
       <View style={[universal.flex1, {marginTop: hp(3)}]}>
 
-        <Ripple style={profile.linkContainer}>
+        <Ripple style={profile.linkContainer} onPress={() => navigation.navigate('Income')}>
           <View style={profile.linkText}>
             <Ruppee style={profile.svgStyle} width={hp(6)} height={hp(6)} />
             <Text style={utils.mediumText}>Income</Text>
@@ -47,7 +47,7 @@ const ProfileScreen = ({ navigation }) => {
           <ChevronRightIcon style={profile.iconStyle} width={hp(2.5)} height={hp(2.5)} color={'black'} />
         </Ripple>
 
-        <Ripple style={profile.linkContainer}>
+        <Ripple style={profile.linkContainer} onPress={() => navigation.navigate('EmpManagement')}>
           <View style={profile.linkText}>
             <Employee style={profile.svgStyle} width={hp(6)} height={hp(6)} />
             <Text style={utils.mediumText}>Employees Mgmt.</Text>
