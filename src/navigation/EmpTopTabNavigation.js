@@ -1,8 +1,8 @@
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
-import CMAddScreen from '../screens/ClothingManagement/CMAddScreen';
 import SimpleHeader from '../components/SimpleHeader';
 import EmployeeScreen from '../screens/EmpManagement/EmployeeScreen';
+import EmployeeAddScreen from '../screens/EmpManagement/EmployeeAddScreen';
 const Tab = createMaterialTopTabNavigator();
 
 function EmpTopTabNavigation({ navigation }) {
@@ -25,7 +25,7 @@ function EmpTopTabNavigation({ navigation }) {
       }}
       >
       <Tab.Screen name="Employees" component={EmployeeScreen} />
-      <Tab.Screen name="Add" component={CMAddScreen} />
+      <Tab.Screen name="Add" component={EmployeeAddScreen} />
     </Tab.Navigator>
   </>
   );

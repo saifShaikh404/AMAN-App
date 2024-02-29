@@ -189,7 +189,7 @@ let forms = StyleSheet.create({
     marginVertical: hp(1),
     borderWidth: 1,
     borderColor: '#d2d2d2',
-    borderRadius: 5,
+    borderRadius: 15,
     elevation: 2,
     paddingHorizontal: wp(3),
     color: 'black',

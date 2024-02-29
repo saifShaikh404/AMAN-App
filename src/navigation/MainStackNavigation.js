@@ -17,7 +17,7 @@ function MainStackNavigation() {
   return (
     <SafeAreaView style={{backgroundColor: '#DEDEDE', flex: 1}}>
         <NavigationContainer>
-            <Stack.Navigator initialRouteName='Login' screenOptions={{
+            <Stack.Navigator initialRouteName='EmpManagement' screenOptions={{
               headerShown: false,
               }}>
                 <Stack.Screen name="Login" component={LoginScreen} />
